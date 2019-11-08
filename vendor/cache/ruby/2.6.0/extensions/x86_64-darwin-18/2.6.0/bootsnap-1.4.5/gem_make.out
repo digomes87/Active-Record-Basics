@@ -1,0 +1,15 @@
+current directory: /Users/redpill/Documents/microverse/RoR/Active-Record-Basics/vendor/cache/ruby/2.6.0/gems/bootsnap-1.4.5/ext/bootsnap
+/usr/local/opt/ruby/bin/ruby -I /usr/local/Cellar/ruby/2.6.3/lib/ruby/2.6.0 -r ./siteconf20191108-19323-1z0blqk.rb extconf.rb
+creating Makefile
+
+current directory: /Users/redpill/Documents/microverse/RoR/Active-Record-Basics/vendor/cache/ruby/2.6.0/gems/bootsnap-1.4.5/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/redpill/Documents/microverse/RoR/Active-Record-Basics/vendor/cache/ruby/2.6.0/gems/bootsnap-1.4.5/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/redpill/Documents/microverse/RoR/Active-Record-Basics/vendor/cache/ruby/2.6.0/gems/bootsnap-1.4.5/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20191108-19323-n2c9on/bootsnap
