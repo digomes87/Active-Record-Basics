@@ -1,5 +1,9 @@
 class AuthorsController < ApplicationController
   def new
-    @r = Author.create(username: "tre", email: "2yochiwarez@gmail.com",password:"123456")
+    @user = Author.new
+  end
+
+  def create 
+    @r = Author.create(params.require(:author).permit(:username, :email, :password))
   end
 end
