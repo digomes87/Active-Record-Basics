@@ -9,7 +9,8 @@
 <body>
 <ul>
 <% @post.each do |p| %>
-  <li><h2><%= p.title%></h2> Post: <h3><%= p.body %></h3><hr></li>
+  <%= @Author = Author.where("id = ?", p.author_id) %>
+  <li><h2><%= @Author %></h2> Post: <h3><%= p.body %></h3><hr></li>
   <% end %>
 </ul>
 </body>
