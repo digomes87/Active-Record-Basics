@@ -1,0 +1,8 @@
+<% @p = Post.joins(:author).find(params[:id]) %>
+
+<h1><%= @p.title %></h1>
+
+<p> <%= @p.body  %> </p>
+
+<p> <%= @p.author.username  %> </p>
+

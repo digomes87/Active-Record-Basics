@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @post = Post.all
+    @post = Post.joins(:author)
   end
 
   def new

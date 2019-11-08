@@ -1,0 +1,13 @@
+<%= form_with(model: @com, url: [@post, @com])  do |p|%>
+
+  <%= p.label :title, "Title" %>
+  <%= p.text_field :title %><br>
+
+  <%= p.label :body, "Body" %>
+  <%= p.text_field :body %><br>
+
+
+  
+  <%= p.submit %>
+
+ <% end %> 
