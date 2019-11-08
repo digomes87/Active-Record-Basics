@@ -7,8 +7,7 @@
   <%= p.text_field :body %><br>
 
   <%= p.label :author_id, "Author ID" %>
-  <%= p.text_field :author_id %><br>
-  
+  <%= p.select(:author_id, Author.all.collect { |p| [ p.username, p.id ] }, { include_blank: 'None' }) %><br>
   
   <%= p.submit %>
 
