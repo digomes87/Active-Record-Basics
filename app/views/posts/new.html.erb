@@ -1,0 +1,15 @@
+<%= form_with model: @post do |p|%>
+
+  <%= p.label :title, "Title" %>
+  <%= p.text_field :title %><br>
+
+  <%= p.label :body, "Body" %>
+  <%= p.text_field :body %><br>
+
+  <%= p.label :author_id, "Author ID" %>
+  <%= p.text_field :author_id %><br>
+  
+  
+  <%= p.submit %>
+
+ <% end %> 

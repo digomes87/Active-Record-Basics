@@ -1,5 +1,9 @@
 class PostsController < ApplicationController
   def new
-    @r = Post.create(title: "titlesfs", author_id: 1)
+    @post = Post.new
+  end
+
+  def create
+    @r = Post.create(params.require(:post).permit(:title, :body, :author_id))
   end
 end
