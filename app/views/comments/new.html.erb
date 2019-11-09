@@ -1,4 +1,4 @@
-<%= form_with(model: @com, url: [@post, @com])  do |p|%>
+<%= form_with model: [@post, @auth, @com] do |p|%>
 
   <%= p.label :title, "Title" %>
   <%= p.text_field :title %><br>
@@ -6,8 +6,10 @@
   <%= p.label :body, "Body" %>
   <%= p.text_field :body %><br>
 
-
+  <%= p.hidden_field :author_id, value: params[:author_id] %>
+  <%= p.hidden_field :post_id, value: params[:post_id] %>
   
   <%= p.submit %>
 
  <% end %> 
+
