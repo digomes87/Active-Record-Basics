@@ -1,3 +1,25 @@
-<a href="/logins/new">Login</a><br>
+<h1>USERS </h1>
+<ul>
+    <li>
+        current user : <%= Author.find_by(id: session[:user_id]).try(:username) %>
+    </li>
+    <li>
+        <a href="/logins/new">Login</a><br>
+    </li>
+    <li>
+        <a href="/authors/new">Create user</a><br>
+    </li>
+</ul>
 
-<a href="/posts">Posts</a>
+
+<h1>POSTS </h1>
+<ul>
+    <li>
+        <a href="/posts">List</a>
+    </li>
+
+    <li>
+        <a href="/posts/new">CreatePost</a>
+    </li>
+
+</ul>

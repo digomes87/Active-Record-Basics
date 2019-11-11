@@ -7,7 +7,7 @@
   <%= p.text_field :body %><br>
 
   <%= p.label :author_id, "Author ID" %>
-  <%= p.select(:author_id, Author.all.collect { |p| [ p.username, p.id ] }, { include_blank: 'None' }) %><br>
+  <%= p.hidden_field :author_id, value: Author.find_by(id: session[:user_id]).try(:id) %>
   
   <%= p.submit %>
 

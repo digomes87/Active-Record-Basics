@@ -4,10 +4,10 @@
 
 <p> <%= @p.body  %> </p>
 
-<p> <%= @p.author.username  %> </p>
+<p>  author : <%=  @p.author.username  %> </p>
 
 <p>
-    current user : <%= Author.find(session[:user_id]).username %>
+    current user : <%= Author.find_by(id: session[:user_id]).try(:username) %>
 </p>
 
 
@@ -21,7 +21,7 @@
       <%= c.body %>
     </p>
 
-    <span>user : <%= c.author.username %></span>
+    <span>author : <%= c.author.username %></span>
   </li>
   <br>
 <% end %>
