@@ -6,6 +6,11 @@
 
 <p> <%= @p.author.username  %> </p>
 
+<p>
+    current user : <%= Author.find(session[:user_id]).username %>
+</p>
+
+
 <a href="<%= params[:id] %>/authors/1/comments/new">comment</a>
 
 <h3>Comments : </h3>
