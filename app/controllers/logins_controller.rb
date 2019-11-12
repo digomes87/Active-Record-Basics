@@ -3,9 +3,8 @@
 class LoginsController < ApplicationController
   def create
     @author = Author.find_by_email(params[:email])
-    if !@author.nil?
-      session[:user_id] = if @author.password == params[:password]Author.find_by_email(params[:email]).id
-      end
+    unless @author.nil?
+      session[:user_id] = (Author.find_by_email(params[:email]).id if @author.password == params[:password])
     end
     redirect_to('/posts')
   end

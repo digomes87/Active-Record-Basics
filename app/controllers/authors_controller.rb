@@ -5,7 +5,7 @@ class AuthorsController < ApplicationController
     @user = Author.new
   end
 
-  def create 
+  def create
     @r = Author.create(params.require(:author).permit(:username, :email, :password))
   end
 end

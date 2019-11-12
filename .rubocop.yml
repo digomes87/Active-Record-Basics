@@ -3,17 +3,19 @@ AllCops:
     - "bin/*"
     - "db/**/*"
     - "config/**/*"
+    - "config/*"
     - "Guardfile"
     - "Rakefile"
     - "Gemfile.lock"
     - "test/*"
     - "node_modules/*"
-    - "application_cable/channel"
+    - "app/channels/application_cable/*"
     - "app/helpers/application_helper"
-    - "app/helpers/"
+    - "app/helpers/*"
     - "app/jobs"
-    - "app/mailers"
-    - "app/models/"
+    - "app/mailers/*"
+    - "vendor/*"
+
   DisplayCopNames: true
 
 Metrics/LineLength:
