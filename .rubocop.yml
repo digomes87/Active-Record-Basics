@@ -8,6 +8,12 @@ AllCops:
     - "Gemfile.lock"
     - "test/*"
     - "node_modules/*"
+    - "application_cable/channel"
+    - "app/helpers/application_helper"
+    - "app/helpers/"
+    - "app/jobs"
+    - "app/mailers"
+    - "app/models/"
   DisplayCopNames: true
 
 Metrics/LineLength:
