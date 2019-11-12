@@ -12,7 +12,7 @@ AllCops:
     - "app/channels/application_cable/*"
     - "app/helpers/application_helper"
     - "app/helpers/*"
-    - "app/jobs"
+    - "app/jobs/*"
     - "app/mailers/*"
     - "vendor/*"
 

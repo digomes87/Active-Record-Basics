@@ -15,6 +15,6 @@ files:
     - "node_modules/*"
     - "app/channels/application_cable/*"
     - "app/helpers/*"
-    - "app/jobs"
+    - "app/jobs/*"
     - "app/mailers/*"
     - "vendor/*"
