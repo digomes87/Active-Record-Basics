@@ -1,0 +1,14 @@
+linters:
+  rubocop:
+    display_cop_names: true
+files:
+  ignore:
+  ignore:
+    - "bin/*"
+    - "db/*"
+    - "config/**/*"
+    - "Guardfile"
+    - "Rakefile"
+    - "Gemfile.lock"
+    - "test/*"
+    - "node_modules/*"
